@@ -4,3 +4,5 @@ Search the patterns and size patterns
 Added numbers#
 { print
 }
+How to do this?
+Please "guide"
