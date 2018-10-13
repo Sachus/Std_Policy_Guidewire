@@ -1,3 +1,8 @@
 # Hello World
 "Test this works"
-Search the patterns
+Search the patterns and size patterns
+Added numbers#
+{ print
+}
+How to do this?
+Please "guide"
