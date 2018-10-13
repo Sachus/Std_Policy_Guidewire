@@ -7,3 +7,4 @@ Added numbers#
 How to do this?
 Please "guide"
 Please process changes
+Accepted the new changes
