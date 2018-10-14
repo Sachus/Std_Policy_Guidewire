@@ -5,11 +5,11 @@ Added numbers#
 { print
 }
 How to do this?
-Please "guide"
+Please "Not good"
 Please process 2 ("changes")
 changes
 Please proceed and commit
-How ru ?mjnjnj
+I'm good, how r u?
 This merges needed to happen
 New checkin this shud go
 Checking the comment is adding to commit.
