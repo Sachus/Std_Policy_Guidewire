@@ -11,7 +11,7 @@ Accepted the new changes
 Please proceed and commit
 Hi
 How ru ?
-This merge needs to happen
+This merges needed to happen
 New checkin this shud go
 Checking the comment is adding to commit.
 Last check-Please see this works
