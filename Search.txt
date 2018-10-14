@@ -6,7 +6,7 @@ Added numbers#
 }
 How to do this?
 Please "guide"
-Please process 1 ("changes")
+Please process 2 ("changes")
 Accepted the new changes
 Please proceed and commit
 Hi
