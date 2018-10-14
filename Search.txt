@@ -6,8 +6,8 @@ Added numbers#
 }
 How to do this?
 Please "Not good"
-Please process 2 ("changes")
-changes
+Please commit 2 ("mmnjn")
+changed this files
 Please proceed and commit
 I'm good, how r u?
 This merges needed to happen
