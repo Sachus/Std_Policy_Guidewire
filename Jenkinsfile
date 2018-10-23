@@ -1,9 +1,20 @@
 #!groovy
+
 pipeline {
-   agent any
-  def handleCheckout = {
-	sh "echo 'Checking out a merge request...'"
-	def credentialsId = scm.userRemoteConfigs[0].credentialsId
-	checkout ([
-		$class: 'GitSCM'}
+    agent any
+    parameters {
+        string(name: 'Source_Branch', defaultValue: 'Source Branch')
+	booleanParam(name: 'Dryrun', defaultValue: true, description: 'Do you need Dry run?')
+	string(name: 'Target_Branch', defaultValue: 'Target Branch')
     }
+stages {
+        stage('Example') {
+            steps {
+                echo "Source ${params.Source_Branch}"
+                echo "Biography: ${params.Dryrun}"
+		echo "Target ${params.Target_Branch}"
+	 }
+	}
+   }
+}
+                
