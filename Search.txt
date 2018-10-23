@@ -5,12 +5,14 @@ Added numbers#
 { print
 }
 How to do this?
-Please "maided"
-Please process 2 ("changes")
-mmnjnjnjj
-Please proceed and 4 commit
-How ru ?mjnjnj
-This merges needed to happend
+=======
+Please "Not good"
+Please commit 2 ("mmnjn")
+changed this files
+Please proceed and commit
+I'm good, how r u?
+This merges needed to happen
+
 New checkin this shud go
 Checking the comment is adding to commit.
 Last check-Please see this works
