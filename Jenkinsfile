@@ -2,8 +2,6 @@
 
 pipeline {
     agent any
-	def a= "July2018_Release"
-	def b="Target_Branch"
         parameters {
         string(name: 'Source_Branch', defaultValue: 'Source Branch')
 	booleanParam(name: 'Dryrun', defaultValue: true, description: 'Do you need Dry run?')
