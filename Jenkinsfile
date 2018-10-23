@@ -15,6 +15,12 @@ stages {
     extensions: [[$class: 'WipeWorkspace']],
     userRemoteConfigs: [[url: 'https://github.com/Sachus/Std_Policy_Guidewire']]
 ])
+  withCredentials([sshUserPrivateKey(credentialsId: '<credential-id>', keyFileVariable: 'SSH_KEY')]) 
+{
+   sh 'git merge Aug2018_Release'
+   sh 'git commit -am "Merged July branch to Aug'
+   sh("git push origin:Aug2018_Release")
+}
   /*stage('Merge') {
             steps {
 	       git push origin Aug2018_Release
