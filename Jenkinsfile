@@ -17,7 +17,7 @@ stages {
 ])
   stage('Merge') {
             steps {
-	       git push origin/Aug2018_Release
+	       git push origin Aug2018_Release
 		       }
   }
 	    }
