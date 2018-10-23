@@ -17,7 +17,7 @@ stages {
 ])
   stage('Merge') {
             steps {
-	       git push https://github.com/Sachus/Std_Policy_Guidewire.git HEAD:Aug2018_Release
+	       git push origin/Aug2018_Release
 		       }
   }
 	    }
