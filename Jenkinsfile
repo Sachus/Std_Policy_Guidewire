@@ -2,7 +2,7 @@
 
 pipeline {
     agent any
-
+	{
 	def a= "July2018_Release"
 	def b="Target_Branch"
         parameters {
