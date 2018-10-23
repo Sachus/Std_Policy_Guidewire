@@ -3,16 +3,16 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'Source Branch', defaultValue: 'Source Branch')
-	booleanParam(name: 'Do you need a dry run', defaultValue: true)
-	string(name: 'Target Branch', defaultValue: 'Target Branch')
+        string(name: 'Source_Branch', defaultValue: 'Source Branch')
+	booleanParam(name: 'Dryrun', defaultValue: true, description: 'Do you need Dry run?')
+	string(name: 'Target_Branch', defaultValue: 'Target Branch')
     }
 stages {
         stage('Example') {
             steps {
-                echo "Source ${params.Source Branch}"
-                echo "Biography: ${params.Do you need a dry run}"
-		echo "Target ${params.Target Branch}"
+                echo "Source ${params.Source_Branch}"
+                echo "Biography: ${params.Dryrun}"
+		echo "Target ${params.Target_Branch}"
 	 }
 	}
    }
