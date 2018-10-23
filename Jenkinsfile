@@ -2,7 +2,6 @@
 
 pipeline {
     agent any
-
 	def a= "July2018_Release"
 	def b="Target_Branch"
         parameters {
@@ -26,7 +25,7 @@ stages {
 		       }
 		    else {
 		    println("The value is not acceptable");*/
-		    }
+		   
 	    }
 	}
    }
