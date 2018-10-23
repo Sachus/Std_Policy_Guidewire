@@ -8,22 +8,18 @@ pipeline {
 	string(name: 'Target_Branch', defaultValue: 'Target Branch')
 	}
 stages {
-        stage('Merge') {
+        stage('Checkout') {
             steps {
     checkout([$class: 'GitSCM',
     branches: [[name: 'origin/July2018_Release']],
     extensions: [[$class: 'WipeWorkspace']],
     userRemoteConfigs: [[url: 'https://github.com/Sachus/Std_Policy_Guidewire']]
 ])
-               /* ##echo "Source ${params.Source_Branch}"
-                ##echo "Biography: ${params.Dryrun}"
-		##echo "Target ${params.Target_Branch}"
-		    if ($a)
+  stage('Merge') {
+            steps {
 	       git push https://github.com/Sachus/Std_Policy_Guidewire.git HEAD:Aug2018_Release
 		       }
-		    else {
-		    println("The value is not acceptable");*/
-		   
+  }
 	    }
 	}
    }
