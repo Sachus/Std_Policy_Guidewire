@@ -2,9 +2,11 @@
 
 pipeline {
     agent any
-node {
-    checkout scm
-}
+checkout([$class: 'GitSCM',
+    branches: [[name: 'origin/July2018_Release']],
+    extensions: [[$class: 'WipeWorkspace']],
+    userRemoteConfigs: [[url: 'https://github.com/Sachus/Std_Policy_Guidewire']]
+])
 	def a= "July2018_Release"
 	def b="Target_Branch"
         parameters {
