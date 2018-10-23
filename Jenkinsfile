@@ -2,14 +2,16 @@
 
 pipeline {
     agent any
+node {
     checkout scm
+}
 	def a= "July2018_Release"
 	def b="Target_Branch"
         parameters {
         string(name: 'Source_Branch', defaultValue: 'Source Branch')
 	booleanParam(name: 'Dryrun', defaultValue: true, description: 'Do you need Dry run?')
 	string(name: 'Target_Branch', defaultValue: 'Target Branch')
-    }
+	}
 stages {
         stage('Merge') {
             steps {
