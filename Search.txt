@@ -9,4 +9,4 @@ Please "guide"
 Please process 1 ("changes")
 Accepted the new changes
 Please proceed and commit
-Hi
+Hi, thhis is issue tracker
