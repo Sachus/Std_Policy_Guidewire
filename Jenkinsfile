@@ -15,11 +15,11 @@ stages {
     extensions: [[$class: 'WipeWorkspace']],
     userRemoteConfigs: [[url: 'https://github.com/Sachus/Std_Policy_Guidewire']]
 ])
-  stage('Merge') {
+  /*stage('Merge') {
             steps {
 	       git push origin Aug2018_Release
 		       }
-  }
+  }*/
 	    }
 	}
    }
