@@ -15,7 +15,7 @@ stages {
                /* ##echo "Source ${params.Source_Branch}"
                 ##echo "Biography: ${params.Dryrun}"
 		##echo "Target ${params.Target_Branch}"*/
-		    if (a=July2018_Release)
+		    if ${a}=July2018_Release)
 		    {
 	       git push https://github.com/Sachus/Std_Policy_Guidewire.git HEAD:Aug2018_Release
 		       }
