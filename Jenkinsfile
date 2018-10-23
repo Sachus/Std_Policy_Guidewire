@@ -2,7 +2,7 @@
 
 pipeline {
     agent any
-	def a= "Source_Branch"
+	def a= "July2018_Release"
 	def b="Target_Branch"
         parameters {
         string(name: 'Source_Branch', defaultValue: 'Source Branch')
@@ -15,8 +15,7 @@ stages {
                /* ##echo "Source ${params.Source_Branch}"
                 ##echo "Biography: ${params.Dryrun}"
 		##echo "Target ${params.Target_Branch}"*/
-		    if (${a}=July2018_Release)
-		    {
+		    if ($a)
 	       git push https://github.com/Sachus/Std_Policy_Guidewire.git HEAD:Aug2018_Release
 		       }
 		    else {
