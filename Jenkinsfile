@@ -18,7 +18,7 @@ stages {
   /* sh 'git merge Aug2018_Release'
    sh 'git commit -am "Merged July branch to Aug'
    sh("git push origin:Aug2018_Release")
-
+ // Testing.
   stage('Merge') {
             steps {
 	       git push origin Aug2018_Release
